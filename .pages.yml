@@ -1,0 +1,76 @@
+media:
+  - name: media
+    label: Images and maps
+    input: public/media
+    output: /public/media
+content:
+  - name: profile
+    label: Profile, home and about
+    type: file
+    path: data/site.json
+    format: json
+    fields:
+      - {name: name, label: Name, type: string}
+      - {name: title, label: Title under name, type: string}
+      - {name: aff, label: Affiliation under title, type: string}
+      - {name: email, label: Contact form email, type: string}
+      - {name: headline, label: Home headline, type: string}
+      - {name: intro, label: Home intro, type: text}
+      - name: links
+        label: Profile links
+        type: object
+        list: true
+        fields: [{name: l, label: Label, type: string}, {name: u, label: URL, type: string}]
+      - {name: bio, label: About paragraphs, type: text, list: true}
+      - name: edu
+        label: Education
+        type: object
+        list: true
+        fields: [{name: t, label: Degree, type: string}, {name: x, label: Details, type: text}]
+      - {name: tools, label: Tool badges, type: string, list: true}
+      - name: ach
+        label: Achievements and certifications
+        type: object
+        list: true
+        fields: [{name: t, label: Title, type: string}, {name: x, label: Details, type: text}]
+      - name: research
+        label: Research page groups
+        type: object
+        list: true
+        fields:
+          - {name: g, label: Group heading, type: string}
+          - name: items
+            label: Items
+            type: object
+            list: true
+            fields: [{name: t, label: Title, type: string}, {name: x, label: Description, type: text}]
+      - name: projects
+        label: Projects
+        type: object
+        list: true
+        fields: &item
+          - {name: id, label: Short ID (lowercase, no spaces, unique), type: string}
+          - {name: title, label: Title, type: string}
+          - {name: tag, label: Small label (e.g. Risk assessment), type: string}
+          - {name: place, label: Place or period, type: string}
+          - {name: cat, label: Project filter category, type: select, options: {values: ["Disaster risk", "Climate & energy", "Infrastructure"]}}
+          - {name: summary, label: Short summary, type: text}
+          - {name: thumb, label: Thumbnail image, type: image}
+          - name: meta
+            label: Key facts box
+            type: object
+            list: true
+            fields: [{name: k, label: Label, type: string}, {name: v, label: Value, type: string}]
+          - name: sections
+            label: Detail sections (Context, Methods, Data, Results)
+            type: object
+            list: true
+            fields: [{name: h, label: Heading, type: string}, {name: t, label: Text, type: text}]
+          - {name: maps, label: Maps and figures, type: image, list: true}
+          - {name: tools, label: Tool badges, type: string, list: true}
+          - {name: credits, label: Credits, type: text}
+      - name: field
+        label: Field and applied work
+        type: object
+        list: true
+        fields: *item
