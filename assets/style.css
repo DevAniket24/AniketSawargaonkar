@@ -16,3 +16,4 @@ form{display:grid;gap:12px;max-width:560px;margin-top:18px}form input,form texta
 .hi{font-size:17px;letter-spacing:.14em;margin-bottom:12px}.side i svg{display:block}.cb small,.meta small{font-size:11px}details.box summary{cursor:pointer;font-weight:650;font-size:15px;list-style:none}details.box summary::after{content:'+';float:right;color:var(--tt);font-size:20px;line-height:1}details[open].box summary::after{content:'−'}details.box p{margin:10px 0}details.box:hover{border-color:var(--teal)}
 .side img{width:150px;height:150px;aspect-ratio:1;border-radius:50%;object-position:center 20%}
 @media(max-width:860px){.side img{width:100px;height:100px}}
+.im{position:relative}.im img{display:block}.ov{position:absolute;left:12px;bottom:12px;background:rgba(16,47,43,.88);color:#fff;font:700 11px/1 Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:7px 10px;border-radius:3px}
