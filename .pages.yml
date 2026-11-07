@@ -49,8 +49,8 @@ content:
           - name: items
             label: Items
             type: object
-            list: true{name: lt, label: Button text (optional), type: string}, {name: sections, label: Detail sections, type: object, list: true, fields: [{name: h, label: Heading, type: string}, {name: img, label: Image (optional), type: image}, {name: t, label: Text, type: text}]}]
-            fields: [{name: t, label: Title, type: string}, {name: x, label: Description, type: text}, {name: u, label: Link or file path (optional), type: string}, 
+            list: true
+            fields: [{name: t, label: Title, type: string}, {name: x, label: Description, type: text}, {name: u, label: Link or file path (optional), type: string}, {name: lt, label: Button text (optional), type: string}, {name: sections, label: Detail sections, type: object, list: true, fields: [{name: h, label: Heading, type: string}, {name: img, label: Image (optional), type: image}, {name: t, label: Text, type: text}]}]
       - name: projects
         label: Projects
         type: object
@@ -81,7 +81,7 @@ content:
         type: object
         list: true
         fields: *item
-          - name: blog
+  - name: blog
     label: Blog posts
     type: file
     path: data/blog.json
