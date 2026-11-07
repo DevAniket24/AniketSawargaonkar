@@ -114,6 +114,17 @@
           "x": "Geospatial risk analytics, power-sector and infrastructure resilience, climate adaptation, probabilistic risk modelling and evidence-led disaster planning."
         }
       ]
+    },
+    {
+      "g": "Articles",
+      "items": [
+        {
+          "t": "Mitigating Extreme Heat in Maharashtra (2025): Evaluating Wada Architecture as a Sustainable Cooling Measure",
+          "x": "Sawargaonkar, A. (2025). Mitigating Extreme Heat in Maharashtra (2025): Evaluating Wada Architecture as a Sustainable Cooling Measure. Southasiadisasters.net, Vol. 20, Issue 7, November 2025. ISSN: 2347-3504. All\nIndia Disaster Mitigation Institute (AIDMI). Special Issue: From Heatwaves to Cooling Futures: Maharashtra's Leadership in Climate Action in India.",
+          "u": "https://aidmi.org/blog/mitigating-extreme-heat-in-maharashtra-2025-evaluating-wada-architecture-as-a-sustainable-cooling-measure/",
+          "lt": "Click to view"
+        }
+      ]
     }
   ],
   "projects": [
@@ -146,7 +157,7 @@
         },
         {
           "h": "Methods",
-          "t": "Indicators were prepared and normalised, then combined through weighted aggregation. The hazard index weights landslide susceptibility (0.50), rainfall intensity (0.30) and soil moisture (0.20)."
+          "t": "\n| Feature / Metric | Basic Plan | Pro Plan | Enterprise Plan |\n| :--- | :---: | :---: | :---: |\n| **Monthly Cost** | $0 / Free | $15 / month | Custom Quote |\n| **Storage Limit** | 5 GB | 100 GB | Unlimited |\n| **Team Members** | 1 User | Up to 10 Users | Unlimited |\n| **API Access** | Core API Only | Full API Access | Full + Dedicated Rate |\n| **Support Level** | Documentation | Priority Email | 24/7 Phone & Chat |\n"
         },
         {
           "h": "Data",
@@ -156,6 +167,10 @@
           "h": "Results",
           "t": "A subdistrict-level relative risk profile. Add key findings and figures here after review."
         }
+      ],
+      "maps": [
+        "public/media/Screenshot 2026-10-16 113218.png",
+        "public/media/Screenshot 2026-11-02 180036.png"
       ],
       "tools": [
         "ArcGIS Pro",
