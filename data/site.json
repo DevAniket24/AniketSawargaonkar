@@ -157,7 +157,7 @@
         },
         {
           "h": "Methods",
-          "t": "Indicators were prepared and normalised, then combined through weighted aggregation. The hazard index weights landslide susceptibility (0.50), rainfall intensity (0.30) and soil moisture (0.20)."
+          "t": "\n| Feature / Metric | Basic Plan | Pro Plan | Enterprise Plan |\n| :--- | :---: | :---: | :---: |\n| **Monthly Cost** | $0 / Free | $15 / month | Custom Quote |\n| **Storage Limit** | 5 GB | 100 GB | Unlimited |\n| **Team Members** | 1 User | Up to 10 Users | Unlimited |\n| **API Access** | Core API Only | Full API Access | Full + Dedicated Rate |\n| **Support Level** | Documentation | Priority Email | 24/7 Phone & Chat |\n"
         },
         {
           "h": "Data",
