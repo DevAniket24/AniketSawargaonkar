@@ -49,8 +49,8 @@ content:
           - name: items
             label: Items
             type: object
-            list: true
-            fields: [{name: t, label: Title, type: string}, {name: x, label: Description, type: text}, {name: u, label: Link or file path (optional), type: string}, {name: lt, label: Button text (optional), type: string}]
+            list: true{name: lt, label: Button text (optional), type: string}, {name: sections, label: Detail sections, type: object, list: true, fields: [{name: h, label: Heading, type: string}, {name: img, label: Image (optional), type: image}, {name: t, label: Text, type: text}]}]
+            fields: [{name: t, label: Title, type: string}, {name: x, label: Description, type: text}, {name: u, label: Link or file path (optional), type: string}, 
       - name: projects
         label: Projects
         type: object
@@ -72,7 +72,7 @@ content:
             label: Detail sections (Context, Methods, Data, Results)
             type: object
             list: true
-            fields: [{name: h, label: Heading, type: string}, {name: t, label: Text, type: text}]
+            fields: [{name: h, label: Heading, type: string}, {name: img, label: Image (optional), type: image}, {name: t, label: Text, type: text}]
           - {name: maps, label: Maps and figures, type: image, list: true}
           - {name: tools, label: Tool badges, type: string, list: true}
           - {name: credits, label: Credits, type: text}
@@ -81,3 +81,25 @@ content:
         type: object
         list: true
         fields: *item
+          - name: blog
+    label: Blog posts
+    type: file
+    path: data/blog.json
+    format: json
+    fields:
+      - name: posts
+        label: Posts
+        type: object
+        list: true
+        fields:
+          - {name: id, label: Short ID (lowercase, no spaces, unique), type: string}
+          - {name: title, label: Title, type: string}
+          - {name: date, label: Date, type: date}
+          - {name: category, label: Category, type: string}
+          - {name: summary, label: Short summary, type: text}
+          - {name: thumb, label: Cover image, type: image}
+          - name: sections
+            label: Post content
+            type: object
+            list: true
+            fields: [{name: h, label: Heading, type: string}, {name: img, label: Image (optional), type: image}, {name: t, label: Text, type: text}]
