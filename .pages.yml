@@ -18,7 +18,7 @@ content:
       - {name: photo, label: Profile photo, type: image}
       - {name: title, label: Title under name, type: string}
       - {name: aff, label: Affiliation under title, type: string}
-      - {name: email, label: Contact form email, type: string}
+      - {name: ga, label: Google Analytics ID (THE CODE), type: string}
       - {name: headline, label: Home headline, type: string}
       - {name: intro, label: Home intro, type: text}
       - name: links
