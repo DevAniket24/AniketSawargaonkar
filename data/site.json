@@ -168,6 +168,10 @@
           "t": "A subdistrict-level relative risk profile. Add key findings and figures here after review."
         }
       ],
+      "maps": [
+        "public/media/Screenshot 2026-10-16 113218.png",
+        "public/media/Screenshot 2026-11-02 180036.png"
+      ],
       "tools": [
         "ArcGIS Pro",
         "Weighted indices"
